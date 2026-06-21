@@ -31,7 +31,7 @@ function NewsArticle(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <Box p={2}>
+      <Box sx={{ p: 2 }}>
         <Typography variant="caption" color="textSecondary" display="block">
           {author}
         </Typography>
