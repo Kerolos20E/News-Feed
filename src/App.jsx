@@ -29,7 +29,8 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         const newArticles = (data.articles || []).map(
-          ({ title, description, author, publishedAt, urlToImage }) => ({
+          ({ title, description, author, publishedAt, urlToImage,url }) => ({
+            url,
             title,
             description,
             author,
