@@ -23,7 +23,7 @@ function App() {
     setLoading(true);
 
     fetch(
-      `https://newsapi.org/v2/top-headlines?q=${query}&page=${pageNumber}&pageSize=5${category ? `&category=${category}` : ""}&country=us&apiKey=${import.meta.env.VITE_NEWS_FEED_API_KEY}`,
+      `/api/news?q=${query}&page=${pageNumber}&pageSize=5${category ? `&category=${category}` : ""}&country=us`,
       { signal: controller.signal },
     )
       .then((res) => res.json())
